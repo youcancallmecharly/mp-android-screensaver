@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Matrix Screensaver</string>
+    <string name="dream_service_name">Matrix Screensaver</string>
+    <string name="start_screensaver">Bildschirmschoner starten</string>
+    <string name="screensaver_description">Matrix-ähnlicher Bildschirmschoner mit fallenden Zeichen</string>
+</resources>
+
