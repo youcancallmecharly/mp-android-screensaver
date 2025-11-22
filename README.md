@@ -1,14 +1,24 @@
 # Matrix Screensaver für Android
 
-Ein benutzerdefinierter Android-Bildschirmschoner mit Matrix-ähnlichem Effekt, bei dem Zeichen kontinuierlich von oben nach unten über den Bildschirm fallen.
+Ein benutzerdefinierter Android-Bildschirmschoner mit Matrix-ähnlichem Effekt, bei dem Zeichen kontinuierlich von oben nach unten über den Bildschirm fallen. Speziell mit BITCOIN-Thematik.
 
 ## Features
 
 - 🎬 Matrix-ähnlicher Effekt mit fallenden Zeichen
-- 🎨 Orange Zeichen (#FF6600) auf schwarzem Hintergrund
+- 🪙 BITCOIN-Buchstaben (B, I, T, C, O, N) in Orange (#FF6600), groß und fett
+- 🎨 Normale Zeichen in dunklerem Orange (#b54b04) auf schwarzem Hintergrund
 - ⚡ Flüssige Animation mit ~60 FPS
-- 🔤 Spezielle Darstellung: BCITON werden groß und fett dargestellt, alle anderen Zeichen klein und normal
+- 📐 Variable Fallgeschwindigkeit (oben 1.2x, unten 2.0x)
+- 🔤 BITCOIN-Buchstaben erscheinen 9x häufiger in ihren zugewiesenen Spalten
 - 📱 Optimiert für Google Pixel 6 (1080x2400), funktioniert auf allen Android 12+ Geräten
+- 🎯 BITCOIN-Buchstaben-Verteilung:
+  - B: Spalte 1, 9
+  - I: Spalte 2, 6, 10, 14
+  - T: Spalte 3, 11
+  - C: Spalte 4, 12
+  - O: Spalte 5, 13
+  - N: Spalte 7, 15
+  - Spalte 8: Keine BITCOIN-Buchstaben
 
 ## Anforderungen
 
@@ -34,8 +44,8 @@ Ein benutzerdefinierter Android-Bildschirmschoner mit Matrix-ähnlichem Effekt, 
 
 1. Klone dieses Repository:
    ```bash
-   git clone https://github.com/dein-username/matrix-screensaver.git
-   cd matrix-screensaver
+   git clone https://github.com/youcancallmecharly/mp-android-screensaver.git
+   cd mp-android-screensaver
    ```
 
 2. Öffne das Projekt in Android Studio
@@ -60,7 +70,13 @@ Ein benutzerdefinierter Android-Bildschirmschoner mit Matrix-ähnlichem Effekt, 
 - **Min SDK**: 31 (Android 12)
 - **Target SDK**: 34
 - **Architektur**: DreamService API mit Custom View Rendering
-- **Zeichen-Pool**: Kleinbuchstaben (a-z), Zahlen (0-9), Sonderzeichen
+- **Zeichen-Pool**: Kleinbuchstaben (a-z außer b,i,t,c,o,n), Zahlen (0-9), Sonderzeichen
+- **BITCOIN-Buchstaben**: Erscheinen 9x häufiger in ihren zugewiesenen Spalten
+- **Farben**: 
+  - BITCOIN-Buchstaben: #FF6600 (Orange)
+  - Normale Zeichen: #b54b04 (dunkleres Orange)
+  - Hintergrund: #000000 (Schwarz)
+- **Geschwindigkeit**: Variable Fallgeschwindigkeit (1.2x oben, 2.0x unten)
 - **Rendering**: Canvas-basiert mit Hardware-Beschleunigung
 
 ## Projektstruktur
